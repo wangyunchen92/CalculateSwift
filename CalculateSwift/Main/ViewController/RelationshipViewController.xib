@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RelationshipViewController" customModule="CalculateSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="allClearBtn" destination="tDx-dD-Jmb" id="a4O-Zl-vZl"/>
+                <outlet property="brotherBtn" destination="jvD-pz-Ony" id="Sag-Cz-1Ls"/>
+                <outlet property="clearEntryBtn" destination="a4a-2D-I6o" id="E0R-7f-Qts"/>
+                <outlet property="convertBtn" destination="DGo-ic-kHJ" id="RbZ-0m-W3R"/>
+                <outlet property="daughterBtn" destination="6pH-14-evT" id="EIR-Ta-jJg"/>
+                <outlet property="enterLabel" destination="V85-An-V52" id="35T-kd-YKV"/>
+                <outlet property="equalBtn" destination="YQ5-ks-1xS" id="g6a-bU-fnp"/>
+                <outlet property="fatherBtn" destination="yfA-Gw-bkL" id="xNY-J1-F3D"/>
+                <outlet property="husbandBtn" destination="r4l-Yq-l2Y" id="olC-qe-Nwu"/>
+                <outlet property="motherBtn" destination="ofR-59-a7a" id="UsC-Zv-EVK"/>
+                <outlet property="resultLabel" destination="tAf-Lm-TaO" id="ab7-Lx-Gc8"/>
+                <outlet property="sisterBtn" destination="eZb-xC-ta1" id="VEy-lR-gMD"/>
+                <outlet property="sonBtn" destination="5Md-eA-QGd" id="Yno-SA-jRc"/>
+                <outlet property="view" destination="pv3-ox-CCd" id="Cdw-oM-T6j"/>
+                <outlet property="wifeBtn" destination="GbW-QH-E92" id="C4P-Nh-JAe"/>
+                <outlet property="youngerBrotherBtn" destination="8rY-0q-uob" id="TOx-uI-5rl"/>
+                <outlet property="youngerSisterBtn" destination="Qjd-fw-95V" id="FpG-zw-3ET"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pv3-ox-CCd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hqs-Gf-76f">
+                    <rect key="frame" x="20" y="529" width="374" height="347"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oLf-oH-HXV">
+                            <rect key="frame" x="0.0" y="90.5" width="72.5" height="166"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfA-Gw-bkL" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="72.5" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="父"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="ZHl-1x-U4K"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofR-59-a7a" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="90.5" width="72.5" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="母"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="uxR-Zg-6vz"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ofR-59-a7a" firstAttribute="height" secondItem="yfA-Gw-bkL" secondAttribute="height" id="EAG-Vo-cHh"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hbl-o1-9uf">
+                            <rect key="frame" x="100.5" y="0.0" width="72.5" height="347"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4l-Yq-l2Y" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="0.0" width="72" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="夫"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="AGz-Sh-cly"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbW-QH-E92" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="90.5" width="72" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="妻"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="VEj-vE-JBg"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Md-eA-QGd" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="181" width="72" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="子"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="fsc-cY-yqN"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pH-14-evT" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="271.5" width="72" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="女"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="zkm-vY-qjU"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6pH-14-evT" firstAttribute="height" secondItem="r4l-Yq-l2Y" secondAttribute="height" id="1uZ-BB-pp2"/>
+                                <constraint firstItem="GbW-QH-E92" firstAttribute="height" secondItem="r4l-Yq-l2Y" secondAttribute="height" id="XIl-hs-v7A"/>
+                                <constraint firstItem="5Md-eA-QGd" firstAttribute="height" secondItem="r4l-Yq-l2Y" secondAttribute="height" id="nIO-bm-jjF"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="duQ-Ul-cfN">
+                            <rect key="frame" x="201" y="0.0" width="72.5" height="347"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-pz-Ony" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="72.5" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="兄"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="dcq-k8-be6"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rY-0q-uob" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="90.5" width="72.5" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="弟"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="Vba-HQ-dPP"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZb-xC-ta1" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="181" width="72.5" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="姐"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="9ST-Jz-DNR"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjd-fw-95V" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="271.5" width="72.5" height="75.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="妹"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapKeyAction:" destination="-1" eventType="touchDown" id="KZZ-4w-oDC"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Qjd-fw-95V" firstAttribute="height" secondItem="jvD-pz-Ony" secondAttribute="height" id="eyF-f0-Vwd"/>
+                                <constraint firstItem="8rY-0q-uob" firstAttribute="height" secondItem="jvD-pz-Ony" secondAttribute="height" id="vuc-ac-SfI"/>
+                                <constraint firstItem="eZb-xC-ta1" firstAttribute="height" secondItem="jvD-pz-Ony" secondAttribute="height" id="wcw-iO-yDr"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cYJ-97-N0p">
+                            <rect key="frame" x="301.5" y="0.0" width="72.5" height="347"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4a-2D-I6o" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="0.0" width="72" height="75.5"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.62745098040000002" blue="0.5450980392" alpha="0.58027068660000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="CE"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapFunctionKeyAction:" destination="-1" eventType="touchDown" id="BZr-kY-O5P"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDx-dD-Jmb" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="90.5" width="72" height="75.5"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.62745098040000002" blue="0.5450980392" alpha="0.58027068660000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="AC"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapFunctionKeyAction:" destination="-1" eventType="touchDown" id="hy9-Ry-LFk"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGo-ic-kHJ" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="181" width="72" height="75.5"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.62745098040000002" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="Convert"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapFunctionKeyAction:" destination="-1" eventType="touchDown" id="jBq-HH-xM9"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQ5-ks-1xS" customClass="CalculateRelationshipButton" customModule="CalculateSwift" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="271.5" width="72" height="75.5"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.62745098040000002" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="equal"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="tapFunctionKeyAction:" destination="-1" eventType="touchDown" id="KgH-wY-Bqt"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="tDx-dD-Jmb" firstAttribute="height" secondItem="a4a-2D-I6o" secondAttribute="height" id="5ws-o4-kOz"/>
+                                <constraint firstItem="DGo-ic-kHJ" firstAttribute="height" secondItem="a4a-2D-I6o" secondAttribute="height" id="GYO-Fs-iZ6"/>
+                                <constraint firstItem="YQ5-ks-1xS" firstAttribute="height" secondItem="a4a-2D-I6o" secondAttribute="height" id="KDW-rs-YCg"/>
+                                <constraint firstItem="YQ5-ks-1xS" firstAttribute="height" secondItem="DGo-ic-kHJ" secondAttribute="height" id="fwp-kk-8DT"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="jvD-pz-Ony" firstAttribute="height" secondItem="r4l-Yq-l2Y" secondAttribute="height" id="DWV-qY-xxL"/>
+                        <constraint firstItem="a4a-2D-I6o" firstAttribute="height" secondItem="Qjd-fw-95V" secondAttribute="height" id="LeH-IX-iJx"/>
+                        <constraint firstItem="r4l-Yq-l2Y" firstAttribute="height" secondItem="yfA-Gw-bkL" secondAttribute="height" id="Tlp-bD-gAZ"/>
+                        <constraint firstItem="cYJ-97-N0p" firstAttribute="width" secondItem="duQ-Ul-cfN" secondAttribute="width" id="Wee-da-zAT"/>
+                        <constraint firstItem="Hbl-o1-9uf" firstAttribute="width" secondItem="oLf-oH-HXV" secondAttribute="width" id="aFQ-Ku-clV"/>
+                        <constraint firstItem="duQ-Ul-cfN" firstAttribute="width" secondItem="Hbl-o1-9uf" secondAttribute="width" id="dEC-2l-FTV"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDD-2T-qlS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="509"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAf-Lm-TaO">
+                            <rect key="frame" x="15" y="452" width="384" height="42"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-AH-kGt">
+                            <rect key="frame" x="15" y="436" width="384" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="0UZ-BT-w9F"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V85-An-V52">
+                            <rect key="frame" x="15" y="421" width="384" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <color key="textColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="tAf-Lm-TaO" firstAttribute="top" secondItem="Q1L-AH-kGt" secondAttribute="bottom" constant="15" id="3Vz-E9-7r6"/>
+                        <constraint firstAttribute="trailing" secondItem="tAf-Lm-TaO" secondAttribute="trailing" constant="15" id="ACf-5H-VkP"/>
+                        <constraint firstItem="Q1L-AH-kGt" firstAttribute="trailing" secondItem="tAf-Lm-TaO" secondAttribute="trailing" id="Med-Wh-4Vh"/>
+                        <constraint firstItem="Q1L-AH-kGt" firstAttribute="top" secondItem="V85-An-V52" secondAttribute="bottom" constant="15" id="Oc0-Hk-v2U"/>
+                        <constraint firstAttribute="bottom" secondItem="tAf-Lm-TaO" secondAttribute="bottom" constant="15" id="WEi-wd-1zH"/>
+                        <constraint firstItem="V85-An-V52" firstAttribute="trailing" secondItem="tAf-Lm-TaO" secondAttribute="trailing" id="byd-r0-P4m"/>
+                        <constraint firstItem="tAf-Lm-TaO" firstAttribute="leading" secondItem="GDD-2T-qlS" secondAttribute="leading" constant="15" id="bzP-cm-PBF"/>
+                        <constraint firstItem="V85-An-V52" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GDD-2T-qlS" secondAttribute="top" constant="15" id="pyH-ee-aCG"/>
+                        <constraint firstItem="V85-An-V52" firstAttribute="leading" secondItem="tAf-Lm-TaO" secondAttribute="leading" id="whZ-nq-f2J"/>
+                        <constraint firstItem="Q1L-AH-kGt" firstAttribute="leading" secondItem="tAf-Lm-TaO" secondAttribute="leading" id="wte-cP-I1u"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hqs-Gf-76f" secondAttribute="bottom" constant="20" id="E2g-Ae-WXZ"/>
+                <constraint firstItem="GDD-2T-qlS" firstAttribute="leading" secondItem="pv3-ox-CCd" secondAttribute="leading" id="Z8l-Mp-BIg"/>
+                <constraint firstItem="GDD-2T-qlS" firstAttribute="top" secondItem="pv3-ox-CCd" secondAttribute="top" id="ecs-ip-iOE"/>
+                <constraint firstItem="hqs-Gf-76f" firstAttribute="top" secondItem="GDD-2T-qlS" secondAttribute="bottom" constant="20" id="iSf-qG-7YJ"/>
+                <constraint firstItem="hqs-Gf-76f" firstAttribute="leading" secondItem="pv3-ox-CCd" secondAttribute="leading" constant="20" id="keB-hM-ftH"/>
+                <constraint firstAttribute="trailing" secondItem="hqs-Gf-76f" secondAttribute="trailing" constant="20" id="uke-rT-ShE"/>
+                <constraint firstItem="GDD-2T-qlS" firstAttribute="trailing" secondItem="pv3-ox-CCd" secondAttribute="trailing" id="zd9-WH-kdD"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Convert" width="30" height="30"/>
+        <image name="equal" width="31" height="31"/>
+    </resources>
+</document>

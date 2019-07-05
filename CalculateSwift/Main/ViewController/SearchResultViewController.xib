@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchResultViewController" customModule="BrowserSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="Z6y-7t-UgO" id="veY-8R-GKg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EW-ry-kVs">
+                    <rect key="frame" x="0.0" y="22" width="375" height="64"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Z6y-7t-UgO">
+                            <rect key="frame" x="0.0" y="8" width="315" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3bH-Xi-ahJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Z6y-7t-UgO" secondAttribute="trailing" constant="60" id="4OR-c1-uhH"/>
+                        <constraint firstItem="Z6y-7t-UgO" firstAttribute="leading" secondItem="8EW-ry-kVs" secondAttribute="leading" id="JHn-UL-Ib5"/>
+                        <constraint firstAttribute="bottom" secondItem="Z6y-7t-UgO" secondAttribute="bottom" id="aKp-OW-Fgd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8EW-ry-kVs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="16M-L8-VHy"/>
+                <constraint firstItem="8EW-ry-kVs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="B4i-du-Sve"/>
+                <constraint firstAttribute="trailing" secondItem="8EW-ry-kVs" secondAttribute="trailing" id="dAM-Rq-vXu"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
