@@ -1,0 +1,3 @@
+[submodule "flutterDemo"]
+	path = flutterDemo
+	url = git@github.com:wangyunchen92/flutterDemo.git

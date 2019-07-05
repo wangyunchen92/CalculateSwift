@@ -622,6 +622,7 @@
 				68215B19228D4DAC0078EFAF /* Resources */,
 				68215B69228D5FBA0078EFAF /* Embed Frameworks */,
 				445092FD482A90EDD13769E0 /* [CP] Embed Pods Frameworks */,
+				0028D6EA22CF295C002AA876 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -714,6 +715,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0028D6EA22CF295C002AA876 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+		};
 		0E1E4F0CDE2066A854499DA1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -988,6 +1006,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = JURAX58Y95;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CalculateSwift/Support/PrefixHeader.pch";
 				INFOPLIST_FILE = CalculateSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1015,6 +1034,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = JURAX58Y95;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CalculateSwift/Support/PrefixHeader.pch";
 				INFOPLIST_FILE = CalculateSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

@@ -20,3 +20,6 @@ pod 'SnapKit'
 pod 'MBProgressHUD'
 
 end
+
+flutter_application_path = './flutterDemo'
+  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
